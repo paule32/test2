@@ -12,8 +12,6 @@ class MyContainerExtensionFactory :
     public QExtensionFactory
 {
     Q_OBJECT
-    Q_INTERFACES(MyContainerInterface) //ExtensionFactory)
-
 public:
     MyContainerExtensionFactory(
     QExtensionManager * parent = nullptr);

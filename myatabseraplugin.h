@@ -16,7 +16,7 @@ class MyATabserAPlugin :
 {
     Q_OBJECT
     Q_INTERFACES(MyContainerInterface)
-    //Q_INTERFACES(QDesignerCustomWidgetInterface)
+    Q_INTERFACES(QDesignerCustomWidgetInterface)
 
 public:
     MyATabserAPlugin(QObject *parent = 0);

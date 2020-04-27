@@ -9,6 +9,7 @@
 #include "mywidgetfilter.h"
 #include "mycontainerextension.h"
 #include "mycontainerextensionfactory.h"
+#include "mycontainerinterface.h"
 
 namespace MyATabserA {
 namespace Internal {
@@ -30,7 +31,7 @@ void MyATabserAPlugin::initialize(QDesignerFormEditorInterface * formEditor)
     Q_ASSERT(manager != 0);
 
     manager->registerExtensions(new MyContainerExtensionFactory(manager),
-    QString(MyContainerExtensionIID));
+    Q_TYPEID(MyContainerInterface));
 
     m_initialized = true;
 }

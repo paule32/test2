@@ -20,7 +20,7 @@ MyContainerExtensionFactory::createExtension(QObject *object, const QString &iid
     return nullptr;
 
     if (MyCustomWidget *widget = qobject_cast<MyCustomWidget*>(object))
-    return new MyContainerExtension(widget, parent);
+    return new MyCustomWidget(widget);
 
     return nullptr;
 }
